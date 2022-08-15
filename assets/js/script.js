@@ -61,14 +61,14 @@ var saveBtn = function() {
 // Save Tasks logic
 var saveTasks = function() {
     // Stringifies the tasks array and sets it to localstorage, accessible by a key of "tasks"
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    localStorage.setItem("tasks-ID-0uhoPqr3v8", JSON.stringify(tasks));
 };
 
 // Load tasks logic
 var loadTasks = function() {
 
     // Sets variable equal parsed localStorage content
-    var parsedTasks = JSON.parse(localStorage.getItem("tasks"));
+    var parsedTasks = JSON.parse(localStorage.getItem("tasks-ID-0uhoPqr3v8"));
 
     // If localStorage is empty, return
     if (!parsedTasks) {
