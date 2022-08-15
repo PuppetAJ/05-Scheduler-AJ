@@ -17,6 +17,8 @@ p {
   font-size: 18px;
 }
 
+/* General class styles */
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -61,6 +63,8 @@ p {
   /* color: white; */
 }
 
+/* Button styles start */
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -72,8 +76,49 @@ p {
 .saveBtn i {
   font-size: 1.5rem;
 }
+
 .saveBtn i:hover {
   font-size: 2rem;
   transition: all .3s ease-in-out;
   color: black;
+}
+
+#clear {
+  font-size: 1vw;
+  font-weight: bolder;
+}
+
+/* Button styles end */
+
+/* Media queries start */
+
+@media screen and (max-width: 1000px) {
+  #clear {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  #clear {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #clear {
+    font-size: 3.55vw;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+
+  #clear {
+    font-size: 3.55vw;
+  }
+
+}
+
+@media screen and (max-width:400px) {
+
 }

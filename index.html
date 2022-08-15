@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap stylesheet link -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- Font Awesome stylesheet link -->
     <link 
       rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
@@ -15,33 +17,46 @@
       crossorigin="anonymous" 
       referrerpolicy="no-referrer" 
     />
+    <!-- Google fonts stylesheet link -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- style.css link -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <!-- Header start -->
     <header class="jumbotron">
+      <!-- Page title -->
       <h1 class="display-3">Work Day Scheduler</h1>
+      <!-- Page description -->
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container col-6">
-      <!-- Timeblocks go here -->
-      <!-- <div class = "time-block row">
-        <p class = "p-2 col-1 hour">9AM</p>
-        <textarea class = "col-10 past"></textarea>
-        <div class="saveBtn col-1 d-flex align-items-center justify-content-center">
-          <i class="fa-solid fa-floppy-disk"></i>
-        </div>
-      </div> -->
-    </div>
+    <!-- Header end -->
 
+    <!-- Main content start -->
+    <main>
+      <!-- Clear button row wrapper -->
+      <div class = "row justify-content-center mt-2 mb-4">
+        <!-- Clear button -->
+        <button id="clear" class = "col-3 col-lg-1 btn btn-danger btn-block rounded">CLEAR ALL</button>
+      </div>
+      <!-- Time block row wrapper container -->
+      <div class="mt-2 container col-12 col-sm-11 col-md-10 col-lg-8">
+        <!-- Time block rows go here -->
+      </div>
+    </main>
+    <!-- Main content end -->
+
+    <!-- Jquery script link -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Moment.js script link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- script.js link -->
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
