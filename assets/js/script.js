@@ -138,7 +138,7 @@ var rowConstructor = function() {
         divEl2.append(iEl);
 
         // Creates a row object set to the textArea element's id and text
-        // This is used to format our array
+        // This is used to format our array for other functions
         var rowEl = {
             text: textAreaEl.val(),
             id: textAreaEl.attr('id')
